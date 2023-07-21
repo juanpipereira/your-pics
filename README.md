@@ -1,3 +1,8 @@
 # your_pics
 
-A new Flutter project.
+# Simply save your pictures 🖼️
+
+- Take pictures with the camera of your device
+- Check the saved images in the list of pictures
+
+
