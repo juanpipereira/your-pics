@@ -5,6 +5,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
+import 'package:your_pics/features/core/domain/int_ext.dart';
 
 import '../domain/picture.dart';
 part 'pictures_repository.g.dart';
@@ -17,7 +18,7 @@ class PicturesRepository {
     final filePath = file.path.split('/').last.split('.').first;
     final date = DateTime.now();
     final formattedDate =
-        '${date.day}/${date.month}/${date.year} ${date.hour}:${date.minute.toString().padLeft(2, '0')}';
+        '${date.day}/${date.month}/${date.year} ${date.hour.toDecimal()}:${date.minute.toDecimal()}';
 
     try {
       final TaskSnapshot taskSnapshot =
