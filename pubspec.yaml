@@ -9,11 +9,23 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  better_open_file: ^3.6.4
+  camera: ^0.10.5+2
+  camerawesome: ^1.4.0
+  cloud_firestore: ^4.8.3
+  firebase_core: ^2.15.0
+  firebase_storage: ^11.2.5
+  flutter_riverpod: ^2.3.6
+  path: ^1.8.3
+  path_provider: ^2.0.15
+  riverpod_annotation: ^2.1.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  build_runner: ^2.4.6
+  riverpod_generator: ^2.2.3
 
 flutter:
   uses-material-design: true
